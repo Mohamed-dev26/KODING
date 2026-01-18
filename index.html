@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>رحلة البرمجة للمبتدئين</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<div class="brand">
+<div class="brand-logo">&lt;/&gt;</div>
+<div class="brand-text">
+<div class="brand-name">رحلة البرمجة</div>
+<div class="brand-tagline">من الصفر إلى أول مشروع لك</div>
+</div>
+</div>
+<nav class="main-nav">
+<a href="#home" class="nav-link active">الرئيسية</a>
+<a href="#courses" class="nav-link">الدورات</a>
+<a href="#scratch-course" class="nav-link">دورة Scratch</a>
+<a href="#lesson-player" class="nav-link">تجربة درس</a>
+<a href="#blog" class="nav-link">المدونة</a>
+<a href="#forum" class="nav-link">المنتدى</a>
+</nav>
+<div class="header-actions">
+<div class="user-pill" id="user-pill" hidden>
+<span id="user-greeting">مرحبًا،</span>
+<span id="user-name"></span>
+</div>
+<button class="btn ghost-btn" id="login-button">تسجيل الدخول</button>
+<button class="btn ghost-btn" id="music-toggle">تشغيل موسيقى هادئة</button>
+<a href="#start" class="btn primary-btn" id="start-button">ابدأ مجانًا</a>
+</div>
+</div>
+</header>
+<main>
+<section class="section section-ads">
+<div class="container">
+<div class="ad-slot ad-banner" data-ad-slot="top-banner">
+<a href="#" class="ad-placeholder">مساحة إعلان 728×90</a>
+</div>
+</div>
+</section>
+<section id="home" class="hero-section">
+<div class="container hero-inner">
+<div class="hero-text">
+<h1>البرمجة تبدأ من هنا، حتى لو لم تكتب سطر كود من قبل</h1>
+<p>دروس قصيرة وتطبيق مباشر داخل المتصفح، مصممة خصيصًا للأطفال والمبتدئين باللغة العربية.</p>
+<div class="hero-actions" id="start">
+<a href="#scratch-course" class="btn primary-btn hero-cta">ابدأ رحلتك في البرمجة مجانًا</a>
+<button class="btn secondary-btn">تصفح محتوى الدورة</button>
+</div>
+<div class="hero-meta">
+<span>مستوى: مبتدئ تمامًا</span>
+<span>دروس عملية تفاعلية</span>
+<span>مجاني بالكامل</span>
+</div>
+</div>
+<div class="hero-visual">
+<div class="screen-mock">
+<div class="screen-header">
+<span class="dot red"></span>
+<span class="dot yellow"></span>
+<span class="dot green"></span>
+</div>
+<div class="screen-body">
+<div class="screen-code">
+<div class="code-line">عند النقر على العلم الأخضر</div>
+<div class="code-line">حرّك الشخصية ١٠ خطوات</div>
+<div class="code-line">كرّر ١٠ مرات</div>
+</div>
+<div class="screen-preview">
+<div class="sprite"></div>
+<div class="play-indicator">تشغيل</div>
+</div>
+</div>
+</div>
+<div class="hero-badges">
+<span class="badge">مناسب من ٨ سنوات فما فوق</span>
+<span class="badge">لا تحتاج أي خبرة</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-intro">
+<div class="container">
+<h2>لماذا هذا الموقع هو أفضل بداية لك؟</h2>
+<div class="cards-grid three">
+<div class="card">
+<h3>مصمم للمبتدئين تمامًا</h3>
+<p>لا تحتاج أي خلفية تقنية. نبدأ من فكرة ما هي البرمجة، ثم نتدرج خطوة خطوة.</p>
+</div>
+<div class="card">
+<h3>تعلم بالتجربة</h3>
+<p>شاهد فيديو قصير ثم طبّق مباشرة في نفس الصفحة باستخدام بيئة تفاعلية شبيهة بـ Scratch.</p>
+</div>
+<div class="card">
+<h3>مجاني بالكامل</h3>
+<p>كل المحتوى التعليمي متاح مجانًا، مع إعلانات بسيطة غير مزعجة ومتوافقة مع المحتوى.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="courses" class="section section-courses">
+<div class="container">
+<div class="section-header">
+<h2>اختر مسارك في عالم البرمجة</h2>
+<p>من Scratch للأطفال إلى بايثون وجافاسكربت وتطوير الويب، ابدأ من المستوى المناسب لك.</p>
+</div>
+<div class="cards-grid three">
+<article class="course-card">
+<div class="course-tag">البداية المثالية</div>
+<h3>مقدمة إلى البرمجة مع Scratch</h3>
+<p>تعلم التفكير البرمجي من خلال بناء ألعاب وقصص تفاعلية باستخدام لبنات Scratch الملونة.</p>
+<ul class="course-meta-list">
+<li>المستوى: مبتدئ تمامًا</li>
+<li>الفئة: أطفال ومبتدئون</li>
+<li>٢٥ حلقة</li>
+<li>اختبار كل حلقة ١٠ دقائق</li>
+</ul>
+<div class="course-actions">
+<a href="#scratch-course" class="btn primary-btn course-view" data-course="scratch">عرض محتوى الدورة</a>
+<a href="#lesson-player" class="btn ghost-btn">جرّب درسًا الآن</a>
+</div>
+</article>
+<article class="course-card">
+<div class="course-tag">خطوة بعد Scratch</div>
+<h3>بايثون للمبتدئين</h3>
+<p>ابدأ مع واحدة من أهم لغات البرمجة في العالم، بأسلوب بسيط ومشاريع صغيرة ممتعة.</p>
+<ul class="course-meta-list">
+<li>المستوى: مبتدئ</li>
+<li>الفئة: شباب وبالغون</li>
+<li>٢٥ حلقة</li>
+<li>اختبار كل حلقة ١٠ دقائق</li>
+</ul>
+<div class="course-actions">
+<a href="#python-course" class="btn primary-btn course-view" data-course="python">عرض محتوى دورة بايثون</a>
+<a href="#lesson-player" class="btn ghost-btn">شاهد مثال درس بايثون</a>
+</div>
+</article>
+<article class="course-card">
+<div class="course-tag">لغات وبرمجة ويب</div>
+<h3>مسار لغات البرمجة المتكامل</h3>
+<p>تدرج من أساسيات البرمجة إلى جافاسكربت، وتطوير واجهات الويب، وقواعد البيانات.</p>
+<ul class="course-meta-list">
+<li>يتضمن: HTML وCSS وJavaScript</li>
+<li>مستوى: من مبتدئ إلى متوسط</li>
+<li>منهج متجدد</li>
+<li>٢٥ حلقة</li>
+<li>اختبار كل حلقة ١٠ دقائق</li>
+</ul>
+<div class="course-actions">
+<a href="#web-course" class="btn secondary-btn course-view" data-course="web">استكشف خطة المسار الكامل</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-ads">
+<div class="container">
+<div class="ad-slot ad-rectangle" data-ad-slot="between-courses">
+<a href="#" class="ad-placeholder">مساحة إعلان 300×250</a>
+</div>
+</div>
+</section>
+<section id="scratch-course" class="section section-outline">
+<div class="container">
+<div class="section-header">
+<h2>محتوى دورة Scratch للمبتدئين</h2>
+<p>دروس مقسمة إلى وحدات صغيرة وواضحة تساعدك على التقدم بثقة.</p>
+</div>
+<div class="course-outline-layout">
+<div class="course-outline">
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ١: التعرف على Scratch والواجهة</div>
+<div class="module-meta">٣ دروس • أساسيات</div>
+</div>
+<ul class="lesson-list">
+<li>ما هي البرمجة؟</li>
+<li>جولة في واجهة Scratch</li>
+<li>إنشاء أول مشروع بسيط</li>
+</ul>
+</div>
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ٢: تحريك الشخصية</div>
+<div class="module-meta">٤ دروس • حركة وتكرار</div>
+</div>
+<ul class="lesson-list">
+<li>تحريك الشخصية باستخدام اللبنات</li>
+<li>إنشاء مسار بسيط</li>
+<li>التكرار والحلقات</li>
+<li>مشروع صغير: سباق بسيط</li>
+</ul>
+</div>
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ٣: الأحداث والأصوات</div>
+<div class="module-meta">٤ دروس • تفاعل ممتع</div>
+</div>
+<ul class="lesson-list">
+<li>التفاعل مع لوحة المفاتيح</li>
+<li>التفاعل مع النقر بالفأرة</li>
+<li>إضافة الأصوات والمؤثرات</li>
+<li>مشروع: لعبة نقر سريعة</li>
+</ul>
+</div>
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ٤: مشروع التخرج الصغير</div>
+<div class="module-meta">٣ دروس • تطبيق شامل</div>
+</div>
+<ul class="lesson-list">
+<li>تخطيط لعبة كاملة</li>
+<li>بناء اللعبة خطوة خطوة</li>
+<li>مشاركة اللعبة مع الأصدقاء</li>
+</ul>
+</div>
+</div>
+<aside class="course-progress">
+<div class="progress-card">
+<h3>تقدمك في الدورة</h3>
+<div class="progress-bar">
+<div class="progress-bar-fill" style="width:12%"></div>
+</div>
+<div class="progress-meta">
+<span>٢ من ٢٠ درسًا مكتمل</span>
+<span>أحسنت البداية</span>
+</div>
+<button class="btn primary-btn full-width start-course-btn" data-course="scratch">تابع من حيث توقفت</button>
+<button class="btn secondary-btn full-width start-course-btn" data-course="scratch">ابدأ من الدرس الأول</button>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section id="python-course" class="section section-outline">
+<div class="container">
+<div class="section-header">
+<h2>بايثون للمبتدئين</h2>
+<p>دورة عملية جدًا تبدأ من الصفر، وتصل بك إلى كتابة سكربتات وبرامج صغيرة مفيدة.</p>
+</div>
+<div class="course-outline-layout">
+<div class="course-outline">
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ١: التعرف على بايثون</div>
+<div class="module-meta">٤ دروس • أساسيات</div>
+</div>
+<ul class="lesson-list">
+<li>ما هي بايثون ولماذا هي مهمة؟</li>
+<li>تثبيت بايثون وتشغيل أول برنامج</li>
+<li>كتابة أول كود: اطبع مرحبًا بالعالم</li>
+<li>التعامل مع الأخطاء الأولى بهدوء</li>
+</ul>
+</div>
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ٢: المتغيرات وأنواع البيانات</div>
+<div class="module-meta">٥ دروس • بناء الأساس</div>
+</div>
+<ul class="lesson-list">
+<li>المتغيرات والقيم</li>
+<li>الأعداد والنصوص</li>
+<li>المدخلات من المستخدم</li>
+<li>العمليات الحسابية والمنطقية</li>
+<li>مشروع بسيط: آلة حاسبة نصية</li>
+</ul>
+</div>
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ٣: الشروط والحلقات</div>
+<div class="module-meta">٥ دروس • منطق البرمجة</div>
+</div>
+<ul class="lesson-list">
+<li>جملة if بأسلوب سهل</li>
+<li>الحلقات for وwhile</li>
+<li>استخدام القوائم</li>
+<li>مشروع: لعبة تخمين رقم</li>
+<li>تحسين الكود وتنظيمه</li>
+</ul>
+</div>
+</div>
+<aside class="course-progress">
+<div class="progress-card">
+<h3>تقدمك في بايثون</h3>
+<div class="progress-bar">
+<div class="progress-bar-fill" style="width:0%"></div>
+</div>
+<div class="progress-meta">
+<span>ابدأ من الدرس الأول</span>
+<span>المستوى: مبتدئ</span>
+</div>
+<button class="btn primary-btn full-width start-course-btn" data-course="python">ابدأ دورة بايثون الآن</button>
+<button class="btn secondary-btn full-width start-course-btn" data-course="python">ابدأ من الدرس الأول</button>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section id="web-course" class="section section-outline">
+<div class="container">
+<div class="section-header">
+<h2>دورة تطوير الويب: HTML + CSS + JavaScript</h2>
+<p>ابدأ ببناء صفحات ويب حقيقية من الصفر، ثم أضف لها الألوان والحركة والتفاعل.</p>
+</div>
+<div class="course-outline-layout">
+<div class="course-outline">
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ١: أساسيات HTML</div>
+<div class="module-meta">٥ دروس • بناء الهيكل</div>
+</div>
+<ul class="lesson-list">
+<li>ما هي صفحات الويب؟</li>
+<li>إنشاء أول صفحة HTML</li>
+<li>العناوين والنصوص والروابط</li>
+<li>الصور والقوائم</li>
+<li>مشروع صغير: صفحة تعريف عن نفسك</li>
+</ul>
+</div>
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ٢: تزيين الصفحات بـ CSS</div>
+<div class="module-meta">٥ دروس • الألوان والتنسيق</div>
+</div>
+<ul class="lesson-list">
+<li>إضافة ملف CSS</li>
+<li>الألوان والخلفيات</li>
+<li>تنسيق النصوص والعناصر</li>
+<li>تصميم أزرار جذابة</li>
+<li>مشروع: صفحة هبوط بسيطة</li>
+</ul>
+</div>
+<div class="outline-module">
+<div class="module-header">
+<div class="module-title">الوحدة ٣: جعل الصفحة تفاعلية بـ JavaScript</div>
+<div class="module-meta">٥ دروس • من الثابت إلى التفاعلي</div>
+</div>
+<ul class="lesson-list">
+<li>إضافة ملف JavaScript</li>
+<li>التعامل مع الأزرار والأحداث</li>
+<li>تغيير المحتوى من خلال الكود</li>
+<li>مشروع: زر يغير لون الخلفية</li>
+<li>مشروع تخرج صغير: صفحة تفاعلية كاملة</li>
+</ul>
+</div>
+</div>
+<aside class="course-progress">
+<div class="progress-card">
+<h3>تقدمك في تطوير الويب</h3>
+<div class="progress-bar">
+<div class="progress-bar-fill" style="width:0%"></div>
+</div>
+<div class="progress-meta">
+<span>ابدأ من HTML ثم انتقل إلى CSS وJavaScript</span>
+<span>المستوى: من مبتدئ إلى متوسط</span>
+</div>
+<button class="btn primary-btn full-width start-course-btn" data-course="web">ابدأ دورة تطوير الويب الآن</button>
+<button class="btn secondary-btn full-width start-course-btn" data-course="web">ابدأ من الدرس الأول</button>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section id="external-arabic-courses" class="section section-courses">
+<div class="container">
+<div class="section-header">
+<h2>كورسات عربية كاملة من يوتيوب</h2>
+<p>اختيارات لكورسات عربية مدتها حوالي ساعة لكل مسار تعليمي.</p>
+</div>
+<div class="cards-grid three">
+<article class="course-card">
+<div class="course-tag">فيديو خارجي</div>
+<h3>كورس Scratch عربي ساعة كاملة</h3>
+<p>فيديو كامل يشرح أساسيات Scratch باللغة العربية للمبتدئين.</p>
+<ul class="course-meta-list">
+<li>المدة: حوالي ٦٠ دقيقة</li>
+<li>مناسب للأطفال والمبتدئين</li>
+</ul>
+<div class="course-actions">
+<a class="btn secondary-btn" href="https://www.youtube.com/watch?v=BhRJ92pDDnQ&list=PLzTFSn-Bzi_yShxnBXoFz7vj-H3bcuULg" target="_blank" rel="noopener">فتح الكورس على يوتيوب</a>
+</div>
+</article>
+<article class="course-card">
+<div class="course-tag">فيديو خارجي</div>
+<h3>كورس بايثون عربي ساعة كاملة</h3>
+<p>فيديو مركز يعرّفك بأساسيات بايثون خطوة بخطوة بالعربي.</p>
+<ul class="course-meta-list">
+<li>المدة: حوالي ٦٠ دقيقة</li>
+<li>مستوى: مبتدئ</li>
+</ul>
+<div class="course-actions">
+<a class="btn secondary-btn" href="https://www.youtube.com/watch?v=mvZHDpCHphk&list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs" target="_blank" rel="noopener">فتح الكورس على يوتيوب</a>
+</div>
+</article>
+<article class="course-card">
+<div class="course-tag">فيديو خارجي</div>
+<h3>كورس تطوير ويب عربي ساعة كاملة</h3>
+<p>فيديو شامل يعرّفك على HTML وCSS وJavaScript بالعربي.</p>
+<ul class="course-meta-list">
+<li>المدة: حوالي ٦٠ دقيقة</li>
+<li>من مبتدئ إلى متوسط</li>
+</ul>
+<div class="course-actions">
+<a class="btn secondary-btn" href="https://www.youtube.com/watch?v=WWn8tOHjZbw&list=PLSiLeKadTQ7kF7p-kd3gkHr6BAwQKYYSv" target="_blank" rel="noopener">فتح الكورس على يوتيوب</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="how-it-works" class="section section-how">
+<div class="container">
+<div class="section-header">
+<h2>كيف تعمل تجربة التعلم؟</h2>
+<p>ثلاث خطوات بسيطة تجعل البرمجة أقرب إلى لعبة ممتعة.</p>
+</div>
+<div class="steps-grid">
+<div class="step-card">
+<div class="step-number">١</div>
+<h3>شاهد فيديو قصير</h3>
+<p>كل درس عبارة عن فيديو واضح لا يتجاوز بضع دقائق، يشرح فكرة واحدة فقط.</p>
+</div>
+<div class="step-card">
+<div class="step-number">٢</div>
+<h3>جرّب بنفسك</h3>
+<p>تحت الفيديو مباشرة، تجد بيئة تفاعلية تشبه Scratch لتطبيق ما تعلمته فورًا.</p>
+</div>
+<div class="step-card">
+<div class="step-number">٣</div>
+<h3>شارك مشروعك</h3>
+<p>انشر نتيجتك في المنتدى، وشاهد ماذا صنع الآخرون، واحصل على تشجيعهم.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="lesson-player" class="section section-lesson">
+<div class="container">
+<div class="section-header">
+<h2>تجربة درس تفاعلي من كل دورة</h2>
+<p>اختر دورة، شاهد مثال درس سريع، ثم طبّق بنفسك على نوع المحتوى المناسب.</p>
+</div>
+<div class="lesson-layout">
+<div class="lesson-video">
+<div class="lesson-video-frame">
+<div class="lesson-video-header">
+<span class="dot red"></span>
+<span class="dot yellow"></span>
+<span class="dot green"></span>
+</div>
+<div class="lesson-video-body">
+<div class="lesson-course-tabs">
+<button type="button" class="course-tab active" data-course="scratch">مثال من دورة Scratch</button>
+<button type="button" class="course-tab" data-course="python">مثال من دورة بايثون</button>
+<button type="button" class="course-tab" data-course="web">مثال من دورة HTML/CSS/JS</button>
+</div>
+<div class="lesson-video-label" id="lesson-video-label">فيديو تمهيدي من دورة Scratch</div>
+<div class="lesson-video-title" id="lesson-video-title">اجعل الشخصية تتحرك عند النقر على العلم الأخضر</div>
+<div class="lesson-course-progress" id="lesson-course-progress"></div>
+<div class="lesson-video-embed">
+<iframe id="lesson-video-iframe" src="https://www.youtube.com/embed/viHILXVY_eU" title="درس تمهيدي" allowfullscreen loading="lazy"></iframe>
+</div>
+</div>
+</div>
+<div class="lesson-text">
+<h3 id="lesson-goal-title">هدف الدرس</h3>
+<p id="lesson-goal-text">في هذا الدرس ستتعلم كيف تجعل شخصية اللعبة تتحرك عندما تضغط على العلم الأخضر باستخدام لبنات Scratch.</p>
+</div>
+</div>
+<div class="lesson-interactive">
+<div class="lesson-steps">
+<h3>خطوات التمرين</h3>
+<ol id="lesson-steps-list"></ol>
+<div class="lesson-step-actions">
+<button id="prev-step" class="btn ghost-btn" disabled>السابق</button>
+<button id="next-step" class="btn primary-btn">الخطوة التالية</button>
+</div>
+</div>
+<div class="scratch-mock" id="lesson-example"></div>
+<div class="lesson-quiz">
+<h3>اختبار التمرين</h3>
+<div class="quiz-timer" id="quiz-timer">10:00</div>
+<ol id="quiz-questions-list"></ol>
+<div class="lesson-quiz-actions">
+<button id="quiz-submit" class="btn primary-btn">إنهاء الاختبار</button>
+</div>
+<div class="quiz-result" id="quiz-result"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-ads">
+<div class="container">
+<div class="ad-slot ad-banner" data-ad-slot="below-lesson-player">
+<a href="#" class="ad-placeholder">مساحة إعلان 728×90</a>
+</div>
+</div>
+</section>
+<section id="community" class="section section-community">
+<div class="container">
+<div class="section-header">
+<h2>مجتمع متعلمين يدعمك</h2>
+<p>شارك أسئلتك ومشاريعك، واستفد من تجارب غيرك في المنتدى.</p>
+</div>
+<div class="cards-grid three">
+<div class="card">
+<h3>أسئلة عن Scratch</h3>
+<p>اطرح أي سؤال يخطر في بالك عن اللبنات أو الأخطاء، وستجد من يساعدك.</p>
+</div>
+<div class="card">
+<h3>شارك مشروعك</h3>
+<p>انشر رابط مشروعك في Scratch، واحصل على تعليقات وتشجيع من الآخرين.</p>
+</div>
+<div class="card">
+<h3>قصص نجاح</h3>
+<p>اقرأ كيف بدأ متعلمون آخرون من الصفر، ووصلوا إلى بناء ألعابهم الخاصة.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="blog" class="section section-blog">
+<div class="container">
+<div class="section-header">
+<h2>مقالات بسيطة تلهمك</h2>
+<p>محتوى مكتوب بلغة سهلة يساعدك على فهم عالم البرمجة بشكل أوسع.</p>
+</div>
+<div class="cards-grid three">
+<article class="card">
+<h3>ما هي البرمجة؟ شرح للأطفال</h3>
+<p>تخيل أن الكمبيوتر صديق جديد ينتظر منك أن تشرح له ما الذي تريد أن يفعله.</p>
+<a href="#" class="text-link">قراءة المقال</a>
+</article>
+<article class="card">
+<h3>٣ أفكار لمشروع Scratch بسيط</h3>
+<p>ابدأ بمشاريع صغيرة: قصة قصيرة، لعبة نقر، أو سباق بسيط بين شخصيتين.</p>
+<a href="#" class="text-link">قراءة المقال</a>
+</article>
+<article class="card">
+<h3>نصائح للاستمرار في التعلم</h3>
+<p>كيف تحافظ على حماسك، وتتعامل مع الشعور بصعوبة بعض الدروس.</p>
+<a href="#" class="text-link">قراءة المقال</a>
+</article>
+</div>
+</div>
+</section>
+<section id="forum" class="section section-forum">
+<div class="container">
+<div class="section-header">
+<h2>المنتدى</h2>
+<p>مساحة آمنة لطرح الأسئلة ومشاركة المشاريع وبناء مجتمع داعم.</p>
+</div>
+<div class="forum-layout">
+<div class="forum-topics">
+<div class="forum-topic">
+<div class="forum-topic-title">كيف أجعل شخصيتين تتحركان في نفس الوقت؟</div>
+<div class="forum-topic-meta">قسم: أسئلة عن Scratch • ٥ ردود</div>
+</div>
+<div class="forum-topic">
+<div class="forum-topic-title">مشروعي الأول: لعبة نقر على النجوم</div>
+<div class="forum-topic-meta">قسم: شارك مشروعك • ٣ صور</div>
+</div>
+<div class="forum-topic">
+<div class="forum-topic-title">نصيحة لمن يواجه صعوبة في الحلقات</div>
+<div class="forum-topic-meta">قسم: نصائح للمبتدئين • ٤ ردود</div>
+</div>
+</div>
+<aside class="forum-side">
+<div class="forum-card">
+<h3>ابدأ أول مشاركة لك</h3>
+<p>اكتب سؤالًا بسيطًا أو شارك لقطة شاشة لمشروعك، وستجد من يشجعك.</p>
+<button class="btn primary-btn full-width">إنشاء موضوع جديد</button>
+</div>
+<div class="forum-card subtle">
+<h3>سياسة المجتمع</h3>
+<p>بيئة آمنة ومحترمة للجميع، خاصة للأطفال. لا يُسمح بالمحتوى غير المناسب.</p>
+</div>
+</aside>
+</div>
+</div>
+</section>
+</main>
+<div class="modal-backdrop" id="login-modal">
+<div class="modal">
+<div class="modal-header">
+<h3>تسجيل الدخول إلى رحلة البرمجة</h3>
+<button class="modal-close" type="button" id="login-close">×</button>
+</div>
+<div class="modal-body">
+<div class="form-field">
+<label for="login-name">الاسم</label>
+<input id="login-name" type="text" placeholder="اكتب اسمك الأول">
+</div>
+<div class="form-field">
+<label for="login-email">البريد الإلكتروني</label>
+<input id="login-email" type="email" placeholder="example@email.com">
+</div>
+<div class="form-field">
+<label for="login-role">نوع الحساب</label>
+<select id="login-role">
+<option value="student">طالب/ة</option>
+<option value="parent">ولي أمر</option>
+<option value="teacher">معلم/ة</option>
+</select>
+</div>
+<div class="form-field">
+<label for="login-password">كلمة المرور</label>
+<input id="login-password" type="password" placeholder="كلمة مرور لا تقل عن ٦ أحرف">
+</div>
+<div class="form-error" id="login-error">من فضلك أكمل البيانات الأساسية لتسجيل الدخول.</div>
+</div>
+<div class="modal-footer">
+<button class="btn ghost-btn" type="button" id="login-cancel">إلغاء</button>
+<button class="btn primary-btn" type="button" id="login-submit">تسجيل الدخول</button>
+</div>
+</div>
+</div>
+<audio id="bg-music" loop preload="none"></audio>
+<footer class="site-footer">
+<div class="container footer-inner">
+<div class="footer-brand">
+<div class="brand-name">رحلة البرمجة</div>
+<div class="brand-tagline">تعلم البرمجة خطوة بخطوة، مجانًا وبالعربية.</div>
+</div>
+<div class="footer-links">
+<a href="#">من نحن</a>
+<a href="#blog">المدونة</a>
+<a href="#forum">المنتدى</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#">سياسة الإعلانات</a>
+<a href="#">تواصل معنا</a>
+</div>
+<div class="footer-copy">
+<span>© رحلة البرمجة. جميع الحقوق محفوظة.</span>
+<span>تم تصميم المنصة خصيصًا للمبتدئين والأطفال.</span>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
